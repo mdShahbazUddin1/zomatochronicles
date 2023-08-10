@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zomato Chronicles</title>
+</head>
+
+<body>
+    <header>
+        <h1>Zomato Chronicles: The Great Food Fiasco</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'menu_list' %}">Menu</a></li>
+                <li><a href="{% url 'order_list' %}">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+
+</html>

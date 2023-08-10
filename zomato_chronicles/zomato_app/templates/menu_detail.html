@@ -1,0 +1,8 @@
+{% extends 'zomato_app/base.html' %}
+
+{% block content %}
+<h2>Menu Details</h2>
+<p>Name: {{ dish.name }}</p>
+<p>Price: ${{ dish.price }}</p>
+<p>{% if dish.availability %}Available{% else %}Not Available{% endif %}</p>
+{% endblock %}

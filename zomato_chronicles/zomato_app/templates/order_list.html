@@ -1,0 +1,10 @@
+{% extends 'zomato_app/base.html' %}
+
+{% block content %}
+<h2>Orders</h2>
+<ul>
+    {% for order_id, order in orders.items %}
+    <li><a href="{% url 'order_details' order_id %}">Order #{{ order_id }}</a> - {{ order.customer_name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
